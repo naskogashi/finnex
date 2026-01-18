@@ -148,6 +148,7 @@ if (isset($upgradeMessage)) {
 }
 ?>
         <div class="form login-form">
+            <a href="https://codon.fi?ref=finnex" target="_blank"><img src="/images/finnex-logo.png" width="30%" height="30%"></a><p><p>
             <h1><?php echo Translator::translate('Welcome')?></h1>
             <p>
                 <span id="loginmsg"><?php echo $strMessage?></span>
