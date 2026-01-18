@@ -74,7 +74,7 @@ define('_CHARSET_', 'UTF-8');
 
 // Page title
 // Sivujen otsikko
-define('_PAGE_TITLE_', 'MLInvoice');
+define('_PAGE_TITLE_', 'Finnex laskutus');
 
 // Whether to force use of https. Disabled by default.
 // Pakotetaanko yhteys https:ään. Oletuksena pois päältä.
