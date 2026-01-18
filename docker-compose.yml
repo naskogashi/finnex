@@ -6,6 +6,8 @@ services:
     container_name: finnex
     ports:
       - "8081:80"
+    volumes:
+      - /opt/finnex:/usr/local/mlinvoice
     environment:
       - MYSQL_HOST=db
       - MYSQL_ROOT_PASSWORD=mlinvoice_root
@@ -21,6 +23,7 @@ services:
     container_name: finnex_db
     volumes:
       - db_data:/var/lib/mysql
+      - /opt/finnex/init-db.sql:/docker-entrypoint-initdb.d/1-init.sql
     environment:
       - MYSQL_ROOT_PASSWORD=mlinvoice_root
       - MYSQL_DATABASE=mlinvoice
